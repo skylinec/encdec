@@ -2,7 +2,6 @@ import os
 import pickle
 import random
 
-
 def menu():
     print("1. Compress sentence")
     print("2. Decompress sentence")
@@ -56,6 +55,8 @@ def unique(input):
 
 
 def saveToFile(words, uniqueWords, remake):
+    print(
+        "[Ambiguous instructions and a level of human guesswork are required to enhance security on this still slightly broken program]")
     keycode = input("Please enter encryption keycode (four digit number): ")
 
     sr = []
@@ -95,6 +96,8 @@ def saveToFile(words, uniqueWords, remake):
 
 
 def readFile():
+    print(
+        "[Ambiguous instructions and a level of human guesswork are required to enhance security on this still slightly broken program]")
     keycode = input("Please enter encryption keycode (four digit number): ")
 
     fileName = input("Please select a file name: ")
