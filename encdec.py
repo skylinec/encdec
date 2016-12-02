@@ -1,6 +1,8 @@
 import os
 import pickle
 import random
+import argparse
+import sys
 
 def menu():
     print("1. Compress sentence")
@@ -43,6 +45,7 @@ def menu():
     elif initMenuChoice == "2":
         readFile()
     else:
+        print("Select one of the options...")
         menu()
 
 
@@ -174,4 +177,19 @@ def doStuff(words, uniqueWords, wordsArray):
 
 
 print("// File crypter and decrypter -- (secure version) //")
-menu()
+
+parser = argparse.ArgumentParser(description='ADD YOUR DESCRIPTION HERE')
+
+if len(sys.argv) > 1:
+    parser = argparse.ArgumentParser(description='ADD YOUR DESCRIPTION HERE')
+    parser.add_argument('-df','--decrypt-file', help="Decrypt a file", required=False)
+    parser.add_argument('-cf', '--compress-file', help="Compress a file", required=False)
+    parser.add_argument('-cs', '--compress-string', help="Compress a string", required=False)
+    args = parser.parse_args()
+
+    if args.():
+        print("Bobo")
+
+else:
+    menu()
+
