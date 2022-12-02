@@ -187,9 +187,6 @@ if len(sys.argv) > 1:
     parser.add_argument('-cs', '--compress-string', help="Compress a string", required=False)
     args = parser.parse_args()
 
-    if args.():
-        print("Bobo")
-
 else:
     menu()
 
